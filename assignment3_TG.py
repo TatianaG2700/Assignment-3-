@@ -530,7 +530,7 @@ def login_page():
                         st.session_state.movies_list = load_movies("movie.json", st.session_state.genre_map)
                         st.session_state.page = "home"
                         st.rerun()
-                st.error("Those credentials don't match. Give it another go.")
+                st.error("Those credentials don't match. Give it another go or Create your account.")
 
             st.markdown("---")
             st.caption("Try with `admin` / `admin123` for the full experience.")
